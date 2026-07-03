@@ -20,6 +20,17 @@ int main() {
     printf("25.0 a 29.9       : Sobrepeso\n");
     printf("30.0 a mas        : Obesidad\n");
 
+       printf("\nSegún su IMC, usted se encuentra en la categoría: ");
+    if (imc < 18.5) {
+        printf("Bajo peso\n");
+    } else if (imc < 25.0) {
+        printf("Peso normal\n");
+    } else if (imc < 30.0) {
+        printf("Sobrepeso\n");
+    } else {
+        printf("Obesidad\n");
+    }
+
     return 0;
 }
     
